@@ -24,8 +24,8 @@ from electra_files.finetune.qa.qa_tasks import QAExample
 session_config = tf.ConfigProto()
 session_config.gpu_options.allow_growth = True
 
-DATA_MODEL_DIR = '/home/renato/checkpoint/qa-electra/'
-# DATA_MODEL_DIR = '/Users/renato/Downloads/electra_large/'
+# DATA_MODEL_DIR = '/home/renato/checkpoint/qa-electra/'
+DATA_MODEL_DIR = '/Users/renato/Downloads/electra_large/'
 INIT_CHECKPOINT = DATA_MODEL_DIR + 'model/model.ckpt-64000'
 
 class FinetuningModel(object):
